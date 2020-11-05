@@ -59,6 +59,9 @@ async function main() {
     if (argv.state.match(/nv/i)) {
         stateId = 32
     }
+    if (argv.state.match(/nc/i)) {
+        stateId = 37
+    }
     var candidateData = await getMeta(stateId)
     await getData(stateId, candidateData)
 }
