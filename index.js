@@ -45,6 +45,7 @@ async function getData(stateId, candidateData) {
         }
     }
     console.log(`Difference: ${trump.vote - biden.vote}`)
+    console.log(`Percent of the vote in: ${data.data[0].progressPct}`)
 }
 
 async function main() {
